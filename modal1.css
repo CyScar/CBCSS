@@ -1,4 +1,7 @@
 * {box-sizing: border-box}
+body{
+    background-color: #00011E;
+}
 
 /* Set a style for all buttons */
 button {
