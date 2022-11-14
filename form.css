@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(22, 22, 22);
+    background-image: url("https://images.unsplash.com/photo-1611107875582-684c70574042?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: contain;
+    /* width: 160px;
+    height: 160px; */
+    color: white;
+    animation-name: moveToLeft;
+    animation-duration: 2.0s;
+}
+
+div.container-xl {
+    overflow: hidden;
+    padding: 50px;
+    margin-top: 10%;
+    display: inline-block;
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(50, 50, 50, 0.8);
+    backdrop-filter: blur(2px);
+    position: relative;
+    left:35%;
+}
+
+h3#form-title{
+    margin-top: 20px;
+    text-align: left;
+    font-family: "Montserrat";
+    align-items: center;
+    position: relative;
+    left:37%;
+    display: flex;
+    font-size: 1.5em;
+}
+
+input#form-input {
+    color: white;
+    padding-left: 20px;
+    margin-top: 20px;
+    float: center;
+    width: 95%;
+    height: 45px;
+    background-color: rgb(20, 20, 20);
+    border: 0;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    
+}
+
+input#form-input:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+input#form-input:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+input#form-input:focus{
+    outline: 0;
+    padding-left: 30px;
+    transform: scale(1.1);
+    border: 2px solid rgb(119, 0, 255);
+}
+
+
+.form-submit {
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: rgb(119, 0, 255);
+    border: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: medium;
+    font-family: "Montserrat";
+    position: relative;
+    left: 30%;
+    align-self: center;
+}
+
+.form-submit:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: rgb(162, 81, 255);
+}
+
+.form-submit:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+.form-submit:focus {
+    background-color: rgb(162, 81, 255);
+    transition: 0.5s;
+    transform: scale(1.2);
+    border: 0;
+    outline: 0;
+}
+
+.center {
+    margin-top: 160px;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
